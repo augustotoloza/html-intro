@@ -6,7 +6,7 @@
 
     <title>js ejercicio 6</title>
 
-    <link rel="stylesheet" href="../../resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css" />
 </head>
 
 <body>
@@ -27,11 +27,16 @@
         <header>
             <h1>Mi cuenta corriente</h1>
         </header>
+        <div>
+            <input type="number" name="monto" id="monto">
+            <button onclick="depositar()">Depositar</button>
+            <button onclick="extraer()">Extraer</button>
+        </div>
         <div class="alert alert-warning">
-            Balance Total: <span>$55,00</span>
+            Balance Total: <span id="total">$55,00</span>
         </div>
         <div class="table-responsive">
-            <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered" id="table">
                 <thead>
                     <tr>
                         <th>Fecha de movimiento</th>
@@ -55,5 +60,5 @@
         </div>
     </main>
 </body>
-
+<script src="/5-ejercicios/js/6-cta-cte.js"></script>
 </html>
